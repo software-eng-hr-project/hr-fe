@@ -1,7 +1,8 @@
 import axios from "axios";
 import qs from "qs";
 
-const URL = process.env.REACT_APP_API_URL;
+const URL = import.meta.env.VITE_API_URL;
+
 const TIMEOUT = 30 * 1000; // ms = second * 1000
 
 const http = axios.create({
