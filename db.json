@@ -10,7 +10,8 @@
       "isActiveWorker": true,
       "jobTitle": "Founder",
       "jobStartDate": "2022-01-15",
-      "accessType": "Owner"
+      "accessType": "Owner",
+      "addressesId": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "isActiveWorker": false,
       "jobTitle": "Marketing Specialist",
       "jobStartDate": "2021-08-01",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 2
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "isActiveWorker": false,
       "jobTitle": "Sales Representative",
       "jobStartDate": "2022-03-10",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 3
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "isActiveWorker": true,
       "jobTitle": "Project Manager",
       "jobStartDate": "2020-11-28",
-      "accessType": "Manager"
+      "accessType": "Manager",
+      "addressesId": 4
     },
     {
       "id": 5,
@@ -58,7 +62,8 @@
       "isActiveWorker": true,
       "jobTitle": "Graphic Designer",
       "jobStartDate": "2023-02-01",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 5
     },
     {
       "id": 6,
@@ -70,7 +75,8 @@
       "isActiveWorker": true,
       "jobTitle": "Human Resources Manager",
       "jobStartDate": "2021-05-20",
-      "accessType": "Manager"
+      "accessType": "Manager",
+      "addressesId": 6
     },
     {
       "id": 7,
@@ -82,7 +88,8 @@
       "isActiveWorker": true,
       "jobTitle": "Software Test Engineer",
       "jobStartDate": "2022-09-05",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 7
     },
     {
       "id": 8,
@@ -94,7 +101,8 @@
       "isActiveWorker": true,
       "jobTitle": "Full Stack Developer",
       "jobStartDate": "2020-12-10",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 9
     },
     {
       "id": 9,
@@ -106,7 +114,8 @@
       "isActiveWorker": true,
       "jobTitle": "Frontend Developer",
       "jobStartDate": "2023-04-01",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 9
     },
     {
       "id": 10,
@@ -118,13 +127,14 @@
       "isActiveWorker": true,
       "jobTitle": "Backend Developer",
       "jobStartDate": "2021-09-15",
-      "accessType": "Employee"
+      "accessType": "Employee",
+      "addressesId": 10
     }
   ],
   "addresses": [
     {
       "id": 1,
-      "description": "Home",
+      "description": "123 Main Street, Apt 101, New York, United States",
       "country": "United States",
       "city": "New York",
       "housePhone": "(123) 456-7890",
@@ -132,34 +142,116 @@
     },
     {
       "id": 2,
-      "description": "Office",
-      "country": "United Kingdom",
-      "city": "London",
+      "description": "456 Park Avenue, New York, United States",
+      "country": "United States",
+      "city": "New York",
       "housePhone": "(111) 222-3333",
       "userId": 2
     },
     {
       "id": 3,
-      "description": "Home",
-      "country": "Canada",
-      "city": "Toronto",
+      "description": "789 London Road, Unit 2, London, United Kingdom",
+      "country": "United Kingdom",
+      "city": "London",
       "housePhone": "(555) 123-4567",
       "userId": 3
     },
     {
       "id": 4,
-      "description": "Office",
-      "country": "Australia",
-      "city": "Sydney",
+      "description": "10 Downing Street, London, United Kingdom",
+      "country": "United Kingdom",
+      "city": "London",
       "housePhone": "(999) 888-7777",
       "userId": 4
     },
     {
       "id": 5,
-      "description": "Home",
+      "description": "3 Rue de la Paix, Paris, France",
+      "country": "France",
+      "city": "Paris",
+      "housePhone": "(444) 555-6666",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "description": "100 King Street, Suite 500, Toronto, Canada",
+      "country": "Canada",
+      "city": "Toronto",
+      "housePhone": null,
+      "userId": 6
+    },
+    {
+      "id": 7,
+      "description": "Plaza Mayor, 1, Madrid, Spain",
+      "country": "Spain",
+      "city": "Madrid",
+      "housePhone": "(666) 777-8888",
+      "userId": 7
+    },
+    {
+      "id": 8,
+      "description": "200 Bay Street, Unit 700, Toronto, Canada",
+      "country": "Canada",
+      "city": "Toronto",
+      "housePhone": null,
+      "userId": 8
+    },
+    {
+      "id": 9,
+      "description": "1234 Alexanderplatz, Berlin, Germany",
       "country": "Germany",
       "city": "Berlin",
-      "housePhone": "(444) 555-6666",
+      "housePhone": "(888) 999-7777",
+      "userId": 9
+    },
+    {
+      "id": 10,
+      "description": "5 Piazza San Marco, Venice, Italy",
+      "country": "Italy",
+      "city": "Venice",
+      "housePhone": null,
+      "userId": 10
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Galactic",
+      "startDate": "2023-01-15",
+      "endDate": "2023-04-30",
+      "status": "In Progress",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Celestial",
+      "startDate": "2023-03-01",
+      "endDate": "2023-08-31",
+      "status": "Planning",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Stellar",
+      "startDate": "2023-05-10",
+      "endDate": "2023-07-15",
+      "status": "Completed",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "name": "Orbit",
+      "startDate": "2023-02-15",
+      "endDate": "2023-06-30",
+      "status": "In Progress",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "name": "Cosmic",
+      "startDate": "2023-04-10",
+      "endDate": "2023-09-30",
+      "status": "Planning",
       "userId": 5
     }
   ]
