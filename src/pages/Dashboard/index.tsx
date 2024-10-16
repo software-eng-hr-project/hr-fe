@@ -1,16 +1,19 @@
+import Tooltip from "components/common/Tooltip";
 import http from "utils/axios.utils";
 
 export default function Dashboard() {
   return (
     <div>
-      <button
-        type="submit"
-        onClick={() => {
-          http.get("services/app/User/GetAll");
-        }}
-      >
-        API test
-      </button>
+      <Tooltip label="this is testing for backend service">
+        <button
+          type="submit"
+          onClick={() => {
+            http.get("/users");
+          }}
+        >
+          API test
+        </button>
+      </Tooltip>
     </div>
   );
 }
