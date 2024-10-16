@@ -5,6 +5,7 @@ const useNavLinkStyles = createStyles((theme) => ({
     marginTop: theme.spacing.xs,
     color: theme.colors.text[0],
     borderRadius: theme.radius.md,
+
     "&:hover": {
       backgroundColor: theme.colors.secondary[4],
     },
