@@ -20,6 +20,7 @@ import Roles from "pages/Roles";
 import Settings from "pages/Settings";
 import { createBrowserRouter } from "react-router-dom";
 import Root from "routes/root.route";
+import Projects from "pages/Projects";
 
 export const pages = [
   {
@@ -50,7 +51,7 @@ export const pages = [
     path: "/projects",
     label: "Projeler",
     icon: <IconChartBubbleFilled />,
-    element: <Employees />,
+    element: <Projects />,
   },
   {
     path: "/vacations",

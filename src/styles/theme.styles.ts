@@ -50,7 +50,7 @@ const theme: MantineThemeOverride = {
       "#FF4D490D",
       "#FF4D4980",
     ],
-    text: ["#4C4E64DE", "#4C4E6499", "#4C4E6461"],
+    text: ["#4C4E64DE", "#4C4E6499", "#4C4E6461", "#4C4E640D", "#4C4E641F"],
     white: ["#fff"],
   },
   headings: {
