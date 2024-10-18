@@ -3,7 +3,7 @@ import qs from "qs";
 
 const URL = import.meta.env.VITE_API_URL;
 
-const TIMEOUT = 30 * 1000; // ms = second * 1000
+const TIMEOUT = (import.meta.env.MODE === "development" ? 300000 : 30) * 1000; // ms = second * 1000
 
 const http = axios.create({
   baseURL: URL,
@@ -23,6 +23,8 @@ const http = axios.create({
 
 http.interceptors.request.use(
   (request) => {
+    const token = localStorage.getItem("access-token");
+    if (token) request.headers.Authorization = `Bearer ${token}`;
     return request;
   },
   (error) => {
