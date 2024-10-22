@@ -6,14 +6,14 @@ type Props = {
   type: "date" | "number";
   minValue: string;
   maxValue: string;
-  percentagePosition?: "top" | "left" | "right" | "bottom"; 
-}
+  percentagePosition?: "top" | "left" | "right" | "bottom";
+};
 
 export default function LinearProgress({
   type,
   minValue,
   maxValue,
-  percentagePosition="right",
+  percentagePosition = "right",
 }: Props) {
   const [color, setColor] = useState<string>("");
   const [value, setValue] = useState(0);
@@ -56,8 +56,15 @@ export default function LinearProgress({
   };
 
   return (
-    <Flex justify="center" gap={["right","left"].includes(percentagePosition) ? "lg" : 0}  align={["right","left"].includes(percentagePosition) ? "center" : "flex-start"}  direction={getPercentagePosition()}>
-      <div style={{width:"100%"}}>
+    <Flex
+      justify="center"
+      gap={["right", "left"].includes(percentagePosition) ? "lg" : 0}
+      align={
+        ["right", "left"].includes(percentagePosition) ? "center" : "flex-start"
+      }
+      direction={getPercentagePosition()}
+    >
+      <div style={{ width: "100%" }}>
         <Progress value={value} color={color} />
       </div>
       <span>{value}%</span>
